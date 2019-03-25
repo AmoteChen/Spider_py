@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>选择你的网站</title>
+<style type="text/css">
+* {box-sizing: border-box;}
+.row .col {
+  float:left;
+  width: 12.5%;
+  background-color:rgba(122,186,214,1.00);
+  border: 0px solid #fff;
+}
+</style>
+</head>
+<body background="static/bn.png">
+<div>
+<h1><br><br><br>      请选择你想爬取的目标网站：</h1>
+</div>
+<div align="center">
+<div class="row">
+
+    <div class="col">
+        <a href="{{ url_for('scutse1') }} " ><img src="/static/SCUT.png" width="200" height="200" alt="" /><br>华南理工大学软件学院</a>
+
+    </div>
+    <div class="col"><a href="{{ url_for('scutcs') }}"><img src="/static/scutcs.png" width="200" height="200" alt="" /><br>华南理工大学计算机学院</a></div>
+    <div class="col"><a href="{{ url_for('beida') }}"><img src="/static/BD1.jpg" width="200" height="200" alt="" /><br>北京大学信息学院</a></div>
+    <div class="col"><a href="{{ url_for('qinghua') }}"><img src="/static/Qh.jpg" width="200" height="200" alt="" /><br>清华大学交叉信息学院</a></div>
+    <div class="col"><a href="{{ url_for('jiaotong') }}"><img src="/static/jiaotong.png" width="200" height="200" alt="" /><br>上海交通大学</a></div>
+    <div class="col"><a href="{{ url_for('guojia') }}"><img src="/static/guojia.png" width="200" height="200" alt="" /><br>信息安全国家重点实验室</a></div>
+    <div class="col"><a href="{{ url_for('jinan') }}"><img src="/static/jinan.jpg" width="200" height="200" alt="" /><br>暨南大学信息学院</a></div>
+    <div class="col"><a href="{{ url_for('huanong') }}"><img src="/static/huanong1.jpg" width="200" height="200" alt="" /><br>华南农业大学信息学院</a></div>
+</div>
+</div>
+</body>
+</html>

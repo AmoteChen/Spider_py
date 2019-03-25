@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+        <title>学术讲座信息小帮手</title>
+    <style type="text/css">
+        h1{
+        font-size:36px;
+        }
+        h2{
+            font-weight:700;
+            font-size:30px;
+            border-bottom: #b7b7b7 1px solid;
+            border-left: rgba(255,255,255,1.00) 1px solid;
+            border-right: rgba(255,255,255,1.00) 1px solid;
+            border-top: #b7b7b7 1px solid;
+            color: rgba(255,255,255,1.00);
+            border-color:rgba(122,186,214,1.00);
+        }
+h3{
+     background-image: url("/static/Backgroundimg1.jpg");
+     border-bottom: #b7b7b7 0px none;
+     border-left:rgba(255,255,255,1.00) 400px none;
+     border-right: rgba(255,255,255,1.00) 400px none;
+     border-top: #b7b7b7 0px none;
+     color: #000000;
+     cursor: text;
+     font-family: "arial";
+     font-size: 18px;
+     padding: 1px;
+}
+
+    </style>
+</head>
+<body background="static/bn.png">
+    <div align="center">
+        <h1>欢迎来到学术讲座信息小帮手</h1>
+        <img alt="小帮帮" src="/static/Wali.jpg" height="300" width="600"/>
+   </div>
+    <div>
+
+        <!--<h3>
+			<br>温馨提示：<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们是来自华南理工大学的本科学生团队（目前团队成员为两人），这个小小的页面是我们用于展示数据库实训成果的一个简易版页面，并不具备大型网站的功能，也不甚美观，如果您发现诸多功能和视觉上的不完善之处，还望抱着宽容的心态给予我们更多的鼓励和帮助<br>&nbsp;&nbsp;&nbsp;&nbsp;本网页运用基于python的爬虫技术从其他网页中为您爬取有用的（您需要的）讲座信息，下面我们会一步步地为您爬取相关信息<br><br>
+		</h3>
+		-->
+    </div>
+    <div>
+     <h2>
+      <p align="center">下面来体验一下小爬虫带来的帮助吧！</p>
+    </h2>
+
+    </div>
+    <div align="center">
+        <a href="{{ url_for('selectpage') }}"><img src="/static/button1.png" height="126" width="300"></a>
+    </div>
+
+<!-- {% block content %}
+{% endblock %} -->
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>暨南大学信息学院</title>
+        <style type="text/css">
+        h1{
+            font-size:24px;
+        }
+        h2{
+            font-size:23px
+        }
+    </style>
+</head>
+<body background="/static/bn.png">
+    <div align="center" style="margin-top:80px;">
+          <img alt="" src="/static/jinan.jpg" width="200px" height="200px" >
+        <h1><br>请输入你想要的信息的关键词(最多五个输入)：</h1>
+        <form name="scutseform" method="post">
+            <input type="text" placeholder="请输入第一个关键词" name="jinan1" style="width:200px; height:30px;"/><br><br><br>
+            <input type="text" placeholder="请输入第二个关键词" name="jinan2" style="width:200px; height:30px;"/><br><br><br>
+            <input type="text" placeholder="请输入第三个关键词" name="jinan3"style="width:200px; height:30px;"/><br><br><br>
+            <input type="text" placeholder="请输入第四个关键词" name="jinan4"style="width:200px; height:30px;"/><br><br><br>
+            <input type="text" placeholder="请输入第五个关键词" name="jinan5"style="width:200px; height:30px;"/><br><br><br>
+            <input type="submit" name="jinansubmit" value="开始查询"  >
+
+
+        </form>
+        <div>
+        <br><br>
+        <h2>我们来看看小帮帮找到了什么：</h2>
+        </div>
+        <div>
+             <br><br><br><textarea style=" width:1000px;height:500px;font-size:20px;text-align: left; " rows="100" cols="60" readonly="readonly"  >
+            {% if (resultlist_jinan) %}
+                {%for eachlist in resultlist_jinan %}
+                    {%if(eachlist) %}
+                        {%for each in eachlist %}
+{% print(each) %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+
+            {% else %}
+{% print ('没有查询到匹配结果!!!')%}
+{% endif %}
+
+                    </textarea>
+
+    </div>
+        </div>
+</body>
+</html>
